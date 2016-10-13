@@ -1,8 +1,8 @@
 /* 
 * @Author: Marte
 * @Date:   2016-10-12 09:39:28
-* @Last Modified by:   Marte
-* @Last Modified time: 2016-10-13 16:42:10
+* @Last Modified by:   hxx
+* @Last Modified time: 2016-10-13 21:59:09
 */
 /*引入字体库*/
 @font-face {
@@ -269,9 +269,8 @@ nav{
 }
 
 .content_r .title{
+    margin-left:20px;
     border-bottom:2px solid #ccc;
-}
-.content_r .title{
     color:#666;
     font-size:16px;
 }
@@ -282,7 +281,9 @@ nav{
 }
 .content_r .service{
     margin:20px 0 0;
+    padding-left:20px;
 }
+
 .content_r .service ul li{
     width: 32.3%;
     margin:0 0.5% 20px;
@@ -450,4 +451,30 @@ footer .copyright a{
         font-size:12px;
         padding-bottom: 70px;
     }
+}
+
+
+/* about */
+.profile{
+    padding:10px;
+}
+.profile h3{
+    font-size:20px;
+    color:#333;
+    margin-top:20px;
+}
+.profile p{
+    font-size:14px;
+    color:#666;
+    line-height:24px;
+    margin-left:14px;
+}
+@media (max-width:991px) {
+    .content_r .service{
+        padding-left:0;
+    }
+    .profile p{
+        margin-left:0;
+    }
+
 }
