@@ -2,7 +2,7 @@
 
 $(function(){
 						function subnavs (){
-								$(".yddnav").find("li").find("a").click(function(){
+								$(".mobil_nav").find("li").find("a").click(function(){
 										if($(this).parent("li").next(".xl").hasClass('xlhide')){
 												var xlH = $(this).parent("li").next(".xl").find(".xls").length;
 												$(this).parent("li").next(".xl").animate({"height":(xlH*40)+"px"},600);
@@ -12,7 +12,7 @@ $(function(){
 												$(this).parent("li").next(".xl").addClass('xlhide');
 										}
 							    });
-								$(".yddnav").find(".xls").click(function(){
+								$(".mobil_nav").find(".xls").click(function(){
 										var xlH = $(this).parent(".xl").find(".xls").length;
 										if($(this).next(".xlxl").hasClass('xlxlhide')){
 												var xlxlH = $(this).next(".xlxl").find(".xlxls").length;

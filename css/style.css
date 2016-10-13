@@ -1,8 +1,8 @@
 /* 
 * @Author: Marte
 * @Date:   2016-10-12 09:39:28
-* @Last Modified by:   hxx
-* @Last Modified time: 2016-10-12 23:43:02
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-13 16:42:10
 */
 /*引入字体库*/
 @font-face {
@@ -137,7 +137,9 @@ body{ font-family:"微软雅黑";}
     margin:0;
     padding:0;
 }
-
+.logo .phone_nav ul li:hover{
+    background:#02b0ef;
+}
 nav{
     width: 100%;
 }
@@ -224,6 +226,7 @@ nav{
     margin:0;
     padding:0;
 }
+
 .content-l .service_title,.content-l ul li{
     height: 42px;
     border-bottom:2px solid #fff;
@@ -250,6 +253,7 @@ nav{
     display:block;
     font-size:14px;
 }
+
 .content-l ul li a:hover{
     background:url(../images/left_navbg.png) no-repeat 20px center;
 }
@@ -284,6 +288,53 @@ nav{
     margin:0 0.5% 20px;
     transition:all 0.3s;
 
+}
+.subnav .mobil_nav li a{
+    display:block;
+    line-height: 60px;
+    font-size:18px;
+    color:#fff;
+    background:#191919;
+}
+@media (max-width:991px ) {
+    .content .content-l{
+        width:100%;
+    }
+    .subnav .mobil_nav li b{
+        padding-right:30px;
+        line-height:56px;
+    }
+    .subnav .mobil_nav .xl{
+        margin:0 0 2px 0;
+        overflow:hidden;
+        height:auto;
+        width:100%;
+    }
+    .subnav .mobil_nav .xl.xlhide{
+        overflow:hidden;
+        height:0;
+    }
+    .subnav .mobil_nav .xl div{
+        width: 100%;
+        background:#e6e6e6;
+        height:40px;
+        line-height: 40px;
+        transition:all 0.3s;
+        border-bottom:1px solid #fff;
+    }
+    .subnav .mobil_nav .xl div a{
+        font-size:12px;
+        color:#000;
+    }
+    .subnav .mobil_nav .xl div:hover{
+        background:#02b0ef;
+    }
+    .subnav .mobil_nav .xl div:hover a{
+        color:#fff;
+    }
+    .content-l ul li a:hover{
+        background:#191919;
+    }
 }
 @media (max-width:640px){
     .content_r .service ul li{
@@ -353,19 +404,50 @@ footer .copyright{
 footer .copyright a{
     color:#fff;
 }
+.mobil_contact{
+    height: 50px;
+    width: 100%;
+    background:#dc881c;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 99;;
+}
+.mobil_contact a{
+    display:block;
+    padding:5px 0;
+}
+.mobil_contact a span,.mobil_contact a h4{
+    line-height: 20px;
+    color:#fff;
+    font-size:16px;
+}
+.mobil_contact .row .col-xs-3:hover{
+    background:#ff9f23;
+}
 
 @media (max-width: 991px) {
     footer .copyright{
         text-align:center;
         height:auto;
         font-size:12px;
+        padding-bottom: 20px;
     }
     footer{
+        height:auto;
         padding-top:15px;
     }
     footer .code{
         width: 100%;
         margin:15px auto;
         text-align:center;
+    }
+}
+@media (max-width: 760px) {
+    footer .copyright{
+        text-align:center;
+        height:auto;
+        font-size:12px;
+        padding-bottom: 70px;
     }
 }
