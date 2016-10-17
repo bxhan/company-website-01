@@ -1,0 +1,193 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-17 09:52:12
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-17 16:07:25
+*/
+.service h2{
+    color:#808080;
+    font-size:24px;
+    text-transform: uppercase;
+}
+.service h1{
+    color:#333;
+    font-size:24px;
+    background:url(../images/biao_bg.png) no-repeat center center;
+}
+.service .title_list{
+    width:100%;
+    margin:20px 0;
+    text-align:center;
+
+}
+.service .title_list li{
+    display:inline-block;
+}
+.service .title_list li a{
+    background:#333;
+    color:#fff;
+    font-size:14px;
+    padding:0 15px;
+    border:1px  solid #ccc;
+    display:block;
+    line-height:28px;
+}
+
+.pic_list{
+
+}
+.pic_list .pro_list li{
+    padding:1px;
+    border:1px solid #ccc;
+    width: 23%;
+    margin:0 0.5% 20px;
+}
+.pic_list .pro_list li .imgbox{
+    height:155px;
+}
+.pic_list .pro_list li .imgbox span{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display:block;
+    background:url(../images/pic_img.png) no-repeat center center;
+    background-size:cover;
+}
+.pic_list .pro_list li .imgbox span h3{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    line-height: 33px;
+    font-size:14px;
+    color:#fff;
+    background:rgba(0,0,0,0.8);
+}
+.pic_list .pro_list li:hover{
+    border-color:#e3a049;
+}
+.pic_list .pro_list li:hover .imgbox span h3{
+    background:rgba(227,160,73,1);
+    transition:all 0.3s;
+}
+.more{
+    width: 180px;
+    height: 30px;
+    display:block;
+    margin:0 auto;;
+}
+.more a{
+    display:block;
+    color:#fff;
+    width: 180px;
+    line-height: 30px;
+    border-radius:20px;
+    background:#dc881c;
+    border:none;
+}
+
+.more a:hover{
+    background:#fff;
+    color:#dc881c;
+    border:1px solid #dc881c;
+}
+
+.aboutus{
+    margin-top:50px;
+    width: 100%;
+    height: 451px;
+    background:url(../images/about_bg.png) no-repeat center center;
+    background-size:cover;
+}
+.aboutus .title_2{
+    margin:50px 0 40px 0;
+}
+
+.aboutus h3,.aboutus h2{
+    color:#fff;
+}
+.aboutus h3{
+    background:url(../images/biao_bg2.png) no-repeat center center;
+
+}
+.picture_box{
+    margin-bottom:20px;
+}
+.picture_box .pic_l{
+    height: 260px;
+    overflow:hidden;
+}
+.picture_box .pic_l img{
+    width: 100%;
+}
+.pic_r h3{
+    font-size:20px;
+    padding-left:16px;
+    background:url(../images/h3_bg.png) no-repeat left center;
+}
+.pic_r p{
+    margin-top:20px;
+    line-height: 26px;
+    color:#fff;
+    font-size:14px;
+}
+.pic_r .look{
+    width: 160px;
+    border:2px solid #fff;
+    line-height: 26px;
+    font-size:14px;
+    display:block;
+    margin-top:20px;
+}
+.pic_r .look a{
+
+    color:#fff;
+}
+.design{
+    margin-top:30px;
+}
+.design h1{
+    font-size:24px;
+    color:#333;
+    background:url(../images/biao_bg.png) no-repeat center center;
+}
+.design h2{
+    color:#808080;
+    font-size:24px;
+}
+.design_box li{
+    width: 50%;
+}
+.news_list .pic{
+    display:block;
+    background:url(../images/sheji_img.png) no-repeat center center;
+    background-size:cover;
+}
+@media (max-width:768px){
+    .pic_list .pro_list li{
+        width: 24%;
+    }
+    .aboutus{
+        height:auto;
+    }
+    .picture_box .pic_l{
+        height:auto;
+        width:100%;
+    }
+    .pic_r .look{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .pic_r h3{
+        margin-top:20px !important;
+    }
+
+}
+@media (max-width:640px) {
+    .service .title_list li{
+        margin:0 0 10px 0;
+    }
+    .pic_list .pro_list li{
+        width: 49%;
+    }
+}
