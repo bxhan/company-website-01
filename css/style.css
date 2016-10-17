@@ -1,8 +1,8 @@
 /* 
 * @Author: Marte
 * @Date:   2016-10-12 09:39:28
-* @Last Modified by:   Marte
-* @Last Modified time: 2016-10-14 17:16:02
+* @Last Modified by:   hxx
+* @Last Modified time: 2016-10-17 23:06:26
 */
 /*引入字体库*/
 @font-face {
@@ -601,7 +601,7 @@ footer .copyright a{
 }
 @media (max-width: 768px) {
     .news .news2_list{
-        margin:0;
+        margin-bottom:10px;
     }
     .message{
         width: 100%;
